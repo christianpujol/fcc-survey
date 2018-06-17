@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FCC Survey Form Challenge</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+                 "></script>
+  </head>  
+  <body>
+    <div id="survey">
+      
+    <h1 id="title">title</h1>
+    
+    <p id="description">
+      I'm your cool new survwey.
+      Made with <a href="https://glitch.com">Glitch</a>
+      for <a href="https://www.freecodecamp.com">FreeCodeCamp</a>!
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input form="survey-form" required type="text" id="name" placeholder="Your Name"><br>
+      <label  id="email-label" for="email" >Email</label>
+      <input form="survey-form" required type="email" id="email" placeholder="Your Email">
+      <br>
+      <label id="number-label" for="number">Age</label>
+      <input form="survey-form" required type="number" id="number" min="7" max="77" placeholder="Age" >
+      <br>
+      <label for="dropdown">If you had to choose, you rather take</label>
+      <select id="dropdown" form="survey-form" >
+        <option value="nap">a nap</option>
+        <option value="breath">your breath</option>
+        <option value="blue">the blue pill</option>
+        <option value="time">your time</option>
+      </select>
+      <br>
+      <div>
+        <label >Select one:</label><br>
+        <div>
+          <input type="radio" name="one-of-four" value="two"> Two<br>
+          <input type="radio" name="one-of-four" value="three"> Three<br>
+          <input type="radio" name="one-of-four" value="four">Four<br>
+        </div>
+      </div>
+    <div>
+      <legend>Choose your interests</legend>
+      <div>
+      <input type="checkbox" id="coding" name="interest" value="coding">
+      <label for="coding">Coding</label>
+    </div>
+    <div>
+      <input type="checkbox" id="music" name="interest" value="music">
+      <label for="music">Music</label>
+    </div>
+    <div>
+      <input type="checkbox" id="art" name="interest" value="art">
+      <label for="art">Art</label>
+    </div>
+    <div>
+      <input type="checkbox" id="sports" name="interest" value="sports">
+      <label for="sports">Sports</label>
+    </div>
+    <div>
+      <input type="checkbox" id="cooking" name="interest" value="cooking">
+      <label for="cooking">Cooking</label>
+    </div>
+    <div>
+      <input type="checkbox" id="other" name="interest" value="other">
+      <label for="other">Other</label>
+      <input type="text" id="otherValue" name="other">
+    </div>
+      </div>
+      <textarea id="textarea" form="survey-form" placeholder="Add a Comment"></textarea>
+      <button id="submit" type="submit" form="survey-form">
+        Submit
+      </button>
+    </form>
+    </div>
+      
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
